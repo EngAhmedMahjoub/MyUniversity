@@ -1,6 +1,6 @@
 import React from 'react';
 
-function MapPage() {
+function Map() {
     return (
         <div>
             <h1>الخريطة</h1>
@@ -8,4 +8,4 @@ function MapPage() {
     );
 }
 
-export default MapPage;
+export default Map;
