@@ -1,34 +1,26 @@
+// src/components/NavBar.js
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const navStyle = {
-    padding: '10px 0',
-    background: '#f0f0f0',
-    marginBottom: '20px'
-};
+const NavBar = () => {
+  const navStyle = {
+    display: 'flex',
+    justifyContent: 'center', // Center items
+    padding: '10px',
+    backgroundColor: '#f0f0f0'
+  };
 
-const ulStyle = {
-    listStyleType: 'none',
-    margin: 0,
-    padding: 0,
-    overflow: 'hidden'
-};
+  const linkStyle = {
+    margin: '0 10px', // Adjust margins for RTL
+  };
 
-const liStyle = {
-    display: 'inline',
-    marginRight: '10px'
+  return (
+    <nav style={navStyle}>
+      <Link to="/" style={linkStyle}>الرئيسية</Link>
+      <Link to="/map" style={linkStyle}>الخريطة</Link>
+      <Link to="/about-us" style={linkStyle}>معلومات عنا</Link>
+    </nav>
+  );
 };
-
-function NavBar() {
-    return (
-        <nav style={navStyle}>
-            <ul style={ulStyle}>
-                <li style={liStyle}><Link to="/">Home</Link></li>
-                <li style={liStyle}><Link to="/map">Map</Link></li>
-                <li style={liStyle}><Link to="/about-us">About Us</Link></li>
-            </ul>
-        </nav>
-    );
-}
 
 export default NavBar;

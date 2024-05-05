@@ -28,6 +28,11 @@
   color: #61dafb;
 }
 
+body {
+  direction: rtl;
+  font-family: 'Arial', sans-serif; /* You can choose a font that supports Arabic */
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
