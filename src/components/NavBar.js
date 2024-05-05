@@ -7,11 +7,13 @@ const NavBar = () => {
     display: 'flex',
     justifyContent: 'center', // Center items
     padding: '10px',
-    backgroundColor: '#f0f0f0'
+    backgroundColor: '#f0f0f0',
+    direction: 'rtl' // Ensuring that layout follows RTL
   };
 
   const linkStyle = {
-    margin: '0 10px', // Adjust margins for RTL
+    margin: '0 10px', // This should work well for both LTR and RTL
+    textAlign: 'center' // Center-align the text within links
   };
 
   return (
