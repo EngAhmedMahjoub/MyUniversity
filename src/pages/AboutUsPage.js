@@ -3,8 +3,8 @@ import React from 'react';
 function AboutUsPage() {
     return (
         <div>
-            <h1>About Us</h1>
-            <p>Information about the university.</p>
+            <h1>من نحن؟</h1>
+            <p>نسعى جاهدين لتسهيل العثور على المرافق بلمح البصر وبكل يسر وسهولة!</p>
         </div>
     );
 }
