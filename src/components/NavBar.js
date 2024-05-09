@@ -27,7 +27,7 @@ const NavBar = () => {
     <nav style={navStyle}>
       <Link to="/" style={linkStyle} activeStyle={activeLinkStyle}>الرئيسية</Link>
       <Link to="/map" style={linkStyle} activeStyle={activeLinkStyle}>الخريطة</Link>
-      <Link to="/about-us" style={linkStyle} activeStyle={activeLinkStyle}>معلومات عنا</Link>
+      <Link to="/about-us" style={linkStyle} activeStyle={activeLinkStyle}>من نحن</Link>
     </nav>
   );
 };

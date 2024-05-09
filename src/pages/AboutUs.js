@@ -5,7 +5,7 @@ const AboutUs = () => {
   return (
     <Layout>
       <div style={containerStyle}>
-        <h1 style={headingStyle}>معلومات عنا</h1>
+        <h1 style={headingStyle}>من نحن</h1>
         <p style={paragraphStyle}>
           نسعى جاهدين لتسهيل العثور على المرافق بلمح البصر وبكل يسر وسهولة!
         </p>
