@@ -1,27 +1,14 @@
-// MapPage.js
-import React, { useRef } from 'react';
-import useVenue from './useVenue';
-import useMapView from './useMapView';
+import React from 'react';
+import Layout from '../components/Layout';
 
-const options = {
-  venue: 'your-venue-id',
-  clientId: 'your-client-id',
-  clientSecret: 'your-client-secret',
+const MapPage = () => {
+  return (
+    <Layout>
+      <h1 style={{ textAlign: 'center' }}>خريطة الحرم الجامعي</h1>
+      <p>استخدم الخريطة أدناه للتنقل في الحرم الجامعي.</p>
+      <MapPage></MapPage>
+    </Layout>
+  );
 };
 
-export default function MapPage() {
-  const mapRef = useRef(null);
-  const { venue, error } = useVenue(options);
-
-  useMapView(mapRef.current, venue);
-
-  if (error) {
-    return <div>Error loading venue: {error.message}</div>;
-  }
-
-  if (!venue) {
-    return <div>Loading...</div>;
-  }
-
-  return <div ref={mapRef} style={{ width: '100%', height: '500px' }} />;
-}
+export default MapPage;
