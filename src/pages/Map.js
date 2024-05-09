@@ -8,7 +8,7 @@ const Map = () => {
       <div style={containerStyle}>
         <h1 style={headingStyle}>خريطة الحرم الجامعي</h1>
         <p style={paragraphStyle}>
-          استخدم الخريطة أدناه للتنقل في الحرم الجامعي.
+          استخدم الخريطة أدناها للتنقل في الحرم الجامعي.
         </p>
         <MapView style={mapStyle} />
       </div>
