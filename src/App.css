@@ -37,13 +37,12 @@
   }
 }
 
-/* src/App.css */
 @media (max-width: 768px) {
   body {
-    font-size: 14px; /* Smaller font size on mobile devices */
+    font-size: 14px;
   }
 
   .content {
-    padding: 10px; /* Less padding on smaller screens */
+    padding: 10px;
   }
 }
