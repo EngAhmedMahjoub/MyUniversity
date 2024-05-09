@@ -14,7 +14,6 @@ const Layout = ({ children }) => {
     padding: '20px',
     maxWidth: '1200px', // Limits the width of the content for readability on large screens
     margin: '0 auto', // Centers the content horizontally
-    backgroundColor: '#fafafa', // A light grey background to differentiate the content area from the rest of the page
   };
 
   const footerStyle = {
