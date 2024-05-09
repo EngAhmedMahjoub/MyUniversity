@@ -1,26 +1,33 @@
-// src/components/NavBar.js
 import React from 'react';
 import { Link } from 'react-router-dom';
 
 const NavBar = () => {
   const navStyle = {
     display: 'flex',
-    justifyContent: 'center', // Center items
+    justifyContent: 'center',
     padding: '10px',
-    backgroundColor: '#f0f0f0',
-    direction: 'rtl' // Ensuring that layout follows RTL
+    backgroundColor: '#333',
+    direction: 'rtl', // Ensuring that layout follows RTL
   };
 
   const linkStyle = {
-    margin: '0 10px', // This should work well for both LTR and RTL
-    textAlign: 'center' // Center-align the text within links
+    margin: '0 10px',
+    color: '#fff',
+    textDecoration: 'none',
+    fontSize: '18px',
+    padding: '10px',
+    transition: 'background-color 0.3s ease', // Smooth transition for hover effect
+  };
+
+  const activeLinkStyle = {
+    backgroundColor: '#555', // Change background color for active link
   };
 
   return (
     <nav style={navStyle}>
-      <Link to="/" style={linkStyle}>الرئيسية</Link>
-      <Link to="/map" style={linkStyle}>الخريطة</Link>
-      <Link to="/about-us" style={linkStyle}>معلومات عنا</Link>
+      <Link to="/" style={linkStyle} activeStyle={activeLinkStyle}>الرئيسية</Link>
+      <Link to="/map" style={linkStyle} activeStyle={activeLinkStyle}>الخريطة</Link>
+      <Link to="/about-us" style={linkStyle} activeStyle={activeLinkStyle}>معلومات عنا</Link>
     </nav>
   );
 };
