@@ -7,7 +7,7 @@ const Home = () => {
       <div style={containerStyle}>
         <h1 style={headingStyle}>الصفحة الرئيسية</h1>
         <p style={paragraphStyle}>
-          مرحبًا بكم في موقع جامعة الينبع. هنا ستجد كل ما تحتاج لمعرفته حول الحرم الجامعي.
+          مرحبًا بكم في موقع مرافق جامعة University Facility، هنا ستجد كل ما تحتاج لمعرفته حول الحرم الجامعي.
         </p>
       </div>
     </Layout>
