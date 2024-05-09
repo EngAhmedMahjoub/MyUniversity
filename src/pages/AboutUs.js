@@ -7,7 +7,7 @@ const AboutUs = () => {
       <div style={containerStyle}>
         <h1 style={headingStyle}>من نحن</h1>
         <p style={paragraphStyle}>
-          نسعى جاهدين لتسهيل العثور على المرافق بلمح البصر وبكل يسر وسهولة!
+          نسعى جاهدين لتسهيل العثور على المرافق بلمح الجامعة البصر وبكل يسر وسهولة!
         </p>
       </div>
     </Layout>
