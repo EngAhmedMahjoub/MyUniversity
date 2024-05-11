@@ -6,8 +6,8 @@ const Home = () => {
   return (
     <Layout>
       <div style={containerStyle}>
-        <img src={logo} />
         <h1 style={headingStyle}>الصفحة الرئيسية</h1>
+        <img src={logo} />
         <p style={paragraphStyle}>
           مرحبًا بكم في موقع مرافق الجامعة-University Facility، هنا ستجد كل ما تحتاج لمعرفته حول الحرم الجامعي.
         </p>
