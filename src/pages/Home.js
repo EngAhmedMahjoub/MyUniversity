@@ -1,10 +1,12 @@
 import React from 'react';
 import Layout from '../components/Layout';
+import logo from '../images/logo.jpg'; // Adjust the relative path as necessary
 
 const Home = () => {
   return (
     <Layout>
       <div style={containerStyle}>
+        <img src={logo} />
         <h1 style={headingStyle}>الصفحة الرئيسية</h1>
         <p style={paragraphStyle}>
           مرحبًا بكم في موقع مرافق الجامعة-University Facility، هنا ستجد كل ما تحتاج لمعرفته حول الحرم الجامعي.

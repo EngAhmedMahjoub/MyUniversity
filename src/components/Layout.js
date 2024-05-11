@@ -6,7 +6,7 @@ const Layout = ({ children }) => {
     display: 'flex',
     flexDirection: 'column',
     minHeight: '100vh', // Ensures the footer is at the bottom of the page, regardless of the content size
-    backgroundColor: '#fff', // Gives a consistent background color
+    backgroundColor: '#f9f9f9', // Gives a consistent background color
   };
 
   const contentStyle = {
