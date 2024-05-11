@@ -14,6 +14,7 @@ const NavBar = () => {
   const logoStyle = {
     height: '50px',
     order: 1,
+    borderRadius: '100%',
   };
 
   const linkContainer = {
