@@ -1,11 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../images/logo.jpg'; // Adjust the relative path as necessary
+import logo from '../images/logo.jpg';
 
 const NavBar = () => {
   const navStyle = {
     display: 'flex',
-    justifyContent: 'space-between', // Adjust this to space-between to use the available space on both ends
+    justifyContent: 'space-between',
     alignItems: 'center',
     padding: '10px',
     backgroundColor: '#333',
@@ -25,7 +25,7 @@ const NavBar = () => {
   };
 
   const linkStyle = {
-    margin: '0 20px', // Increase margin for better visual separation
+    margin: '0 20px',
     color: '#fff',
     textDecoration: 'none',
     fontSize: '18px',

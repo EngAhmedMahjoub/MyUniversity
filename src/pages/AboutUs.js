@@ -14,7 +14,6 @@ const AboutUs = () => {
   );
 };
 
-// CSS Styles
 const containerStyle = {
   textAlign: 'center',
   padding: '20px',

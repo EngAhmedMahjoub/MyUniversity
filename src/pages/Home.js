@@ -1,6 +1,6 @@
 import React from 'react';
 import Layout from '../components/Layout';
-import logo from '../images/logo.jpg'; // Adjust the relative path as necessary
+import logo from '../images/logo.jpg';
 
 const Home = () => {
   return (
@@ -73,7 +73,7 @@ const paragraphStyle = {
 };
 
 const sectionStyle = {
-  marginBottom: '20px',
+  marginBottom: '75px',
 };
 
 export default Home;

@@ -5,23 +5,23 @@ const Layout = ({ children }) => {
   const layoutStyle = {
     display: 'flex',
     flexDirection: 'column',
-    minHeight: '100vh', // Ensures the footer is at the bottom of the page, regardless of the content size
-    backgroundColor: '#f9f9f9', // Gives a consistent background color
-  };
+    minHeight: '100vh',
+    backgroundColor: '#f9f9f9', 
+    };
 
   const contentStyle = {
-    flex: 1, // Takes up all available space, pushing the footer down
+    flex: 1,
     padding: '20px',
-    maxWidth: '1200px', // Limits the width of the content for readability on large screens
-    margin: '0 auto', // Centers the content horizontally
+    maxWidth: '1200px',
+    margin: '0 auto',
   };
 
   const footerStyle = {
     textAlign: 'center',
-    padding: '10px 20px', // Consistent padding with the content area
-    backgroundColor: '#333', // Dark background for contrast
-    color: '#fff', // White text for readability against the dark background
-    borderTop: '1px solid #e7e7e7', // Adds a subtle border for visual separation
+    padding: '10px 20px',
+    backgroundColor: '#333',
+    color: '#fff',
+    borderTop: '1px solid #e7e7e7',
   };
 
   return (

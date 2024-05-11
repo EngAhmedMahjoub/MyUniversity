@@ -16,7 +16,6 @@ const Map = () => {
   );
 };
 
-// CSS Styles
 const containerStyle = {
   textAlign: 'center',
   padding: '20px',
@@ -36,9 +35,9 @@ const paragraphStyle = {
 };
 
 const mapStyle = {
-  width: '100%', // Ensures the map fills the container
-  height: '500px', // Specifies the height of the map for adequate visibility
-  border: 'none', // Optional: Removes any default border around the iframe or container
+  width: '100%',
+  height: '500px',
+  border: 'none',
 };
 
 export default Map;
