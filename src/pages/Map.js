@@ -8,7 +8,8 @@ const Map = () => {
       <div style={containerStyle}>
         <h1 style={headingStyle}>خريطة الحرم الجامعي</h1>
         <p style={paragraphStyle}>
-          استخدم الخريطة أدناها للتنقل في الحرم الجامعي.
+          استكشف خريطة الحرم الجامعي لتجد المباني الأكاديمية، المكتبات، السكن الطلابي،
+          والمرافق الأخرى بسهولة. استخدم الخريطة أدناه لتسهيل تنقلك والوصول إلى مختلف الأماكن بفاعلية.
         </p>
         <MapView style={mapStyle} />
       </div>
@@ -32,6 +33,7 @@ const headingStyle = {
 const paragraphStyle = {
   fontSize: '1.2rem',
   lineHeight: '1.6',
+  marginBottom: '20px',
 };
 
 const mapStyle = {
