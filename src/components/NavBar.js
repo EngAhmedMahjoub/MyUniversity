@@ -1,33 +1,46 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import logo from '../images/logo.jpg'; // Adjust the relative path as necessary
 
 const NavBar = () => {
   const navStyle = {
     display: 'flex',
-    justifyContent: 'center',
+    justifyContent: 'space-between', // Adjust this to space-between to use the available space on both ends
+    alignItems: 'center',
     padding: '10px',
     backgroundColor: '#333',
-    direction: 'rtl', // Ensuring that layout follows RTL
+  };
+
+  const logoStyle = {
+    height: '50px',
+    order: 1,
+    borderRadius: '100%',
+  };
+
+  const linkContainer = {
+    display: 'flex',
+    justifyContent: 'center',
+    flexGrow: 1,
+    order: 2,
   };
 
   const linkStyle = {
-    margin: '0 10px',
+    margin: '0 20px', // Increase margin for better visual separation
     color: '#fff',
     textDecoration: 'none',
     fontSize: '18px',
     padding: '10px',
-    transition: 'background-color 0.3s ease', // Smooth transition for hover effect
-  };
-
-  const activeLinkStyle = {
-    backgroundColor: '#555', // Change background color for active link
+    transition: 'background-color 0.3s ease',
   };
 
   return (
     <nav style={navStyle}>
-      <Link to="/" style={linkStyle} activeStyle={activeLinkStyle}>الرئيسية</Link>
-      <Link to="/map" style={linkStyle} activeStyle={activeLinkStyle}>الخريطة</Link>
-      <Link to="/about-us" style={linkStyle} activeStyle={activeLinkStyle}>معلومات عنا</Link>
+      <img src={logo} style={logoStyle} alt="logo"/>
+      <div style={linkContainer}>
+        <Link to="/" style={linkStyle}>الرئيسية</Link>
+        <Link to="/map" style={linkStyle}>الخريطة</Link>
+        <Link to="/about-us" style={linkStyle}>من نحن</Link>
+      </div>
     </nav>
   );
 };
