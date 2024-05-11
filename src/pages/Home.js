@@ -1,6 +1,6 @@
 import React from 'react';
 import Layout from '../components/Layout';
-import logo from '../images/logo.jpg';
+import logo from '../images/logo.jpg'; // Adjust the relative path as necessary
 
 const Home = () => {
   return (
@@ -8,32 +8,25 @@ const Home = () => {
       <div style={containerStyle}>
         <h1 style={headingStyle}>الصفحة الرئيسية</h1>
         <img src={logo} alt="شعار الجامعة" style={logoStyle} />
-        
+
         <section style={sectionStyle}>
-          <h2 style={subHeadingStyle}>مرحبًا بكم</h2>
+          <h2 style={subHeadingStyle}>مرحبًا بكم في مرافق جامعتي</h2>
           <p style={paragraphStyle}>
-            مرحبًا بكم في موقع مرافق جامعة الينبع، المصدر الأساسي لكل ما تحتاجون معرفته عن الحرم الجامعي.
+            منصتكم الأولى لاستكشاف حرم جامعتكم بكل سهولة ويسر. نقدم لكم دليلًا شاملاً للتنقل داخل الجامعة، مما يسهل عليكم الوصول إلى جميع المرافق الأكاديمية والخدمية.
           </p>
         </section>
 
         <section style={sectionStyle}>
-          <h2 style={subHeadingStyle}>مرافقنا</h2>
+          <h2 style={subHeadingStyle}>تصفح الخرائط التفاعلية</h2>
           <p style={paragraphStyle}>
-            تعرفوا على مرافقنا المتميزة والخدمات التي نقدمها لدعم رحلتكم التعليمية، من الفصول الدراسية الحديثة والمكتبات الغنية بالموارد، إلى الأنشطة الطلابية والمرافق الترفيهية.
+            استخدموا خرائطنا التفاعلية لتجدوا أسرع الطرق إلى الفصول الدراسية، المكتبات، الكافتيريات، وغيرها من المرافق الهامة. خرائطنا مصممة لتكون سهلة الاستخدام ومفيدة لجميع الطلاب الجدد.
           </p>
         </section>
 
         <section style={sectionStyle}>
-          <h2 style={subHeadingStyle}>استكشاف البرامج والفعاليات</h2>
+          <h2 style={subHeadingStyle}>معلومات مفصلة عن المرافق</h2>
           <p style={paragraphStyle}>
-            ندعوكم لاستكشاف موقعنا للتعرف أكثر على البرامج الأكاديمية المتنوعة والفعاليات الجامعية القادمة، وكذلك للاطلاع على آخر الأخبار والمستجدات في جامعة الينبع.
-          </p>
-        </section>
-
-        <section style={sectionStyle}>
-          <h2 style={subHeadingStyle}>تواصلوا معنا</h2>
-          <p style={paragraphStyle}>
-            لا تترددوا في التواصل معنا عبر الصفحة الخاصة بالتواصل لأية استفسارات أو معلومات إضافية قد تحتاجونها.
+            لكل مرفق في الجامعة، الموارد المتوفرة، وخدمات خاصة. هذه المعلومات تساعدكم في التخطيط الأمثل ليومكم الدراسي.
           </p>
         </section>
       </div>
@@ -73,7 +66,7 @@ const paragraphStyle = {
 };
 
 const sectionStyle = {
-  marginBottom: '75px',
+  marginBottom: '50px',
 };
 
 export default Home;
