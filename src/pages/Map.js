@@ -8,7 +8,8 @@ const Map = () => {
       <div style={containerStyle}>
         <h1 style={headingStyle}>خريطة الحرم الجامعي</h1>
         <p style={paragraphStyle}>
-          استخدم الخريطة أدناها للتنقل في الحرم الجامعي.
+          استكشف خريطة الحرم الجامعي لتجد المباني الأكاديمية، المكتبات، السكن الطلابي،
+          والمرافق الأخرى بسهولة. استخدم الخريطة أدناه لتسهيل تنقلك والوصول إلى مختلف الأماكن بفاعلية.
         </p>
         <MapView style={mapStyle} />
       </div>
@@ -16,7 +17,6 @@ const Map = () => {
   );
 };
 
-// CSS Styles
 const containerStyle = {
   textAlign: 'center',
   padding: '20px',
@@ -33,12 +33,13 @@ const headingStyle = {
 const paragraphStyle = {
   fontSize: '1.2rem',
   lineHeight: '1.6',
+  marginBottom: '20px',
 };
 
 const mapStyle = {
-  width: '100%', // Ensures the map fills the container
-  height: '500px', // Specifies the height of the map for adequate visibility
-  border: 'none', // Optional: Removes any default border around the iframe or container
+  width: '100%',
+  height: '500px',
+  border: 'none',
 };
 
 export default Map;
